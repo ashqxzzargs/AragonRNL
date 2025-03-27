@@ -8,10 +8,9 @@ const MainLayout = ({content}: MainLayoutProps) => {
   return (
     <>
       <div className="container-fluid">
-        <Navbar />
-        
-        <div>{content}</div>
-      </div>
+         <Navbar />
+         <div>{content}</div>
+       </div>
     </>
   );
 };

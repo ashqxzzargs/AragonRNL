@@ -1,14 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Genders from "./pages/gender/Genders";
 
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Genders />,
+  },
+]);
+
 const App = () => {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Genders />} />
-      </Routes>
-    </Router>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

@@ -4,18 +4,18 @@ const AddGenderForm = () => {
     <div className="form-group">
         <div className="mb-3">
             <label htmlFor="gender">Gender</label>
-            <input type="text" 
+            <input 
+            type="text" 
             className="form-control" 
             id="gender" 
             name="gender" 
             />
         </div>
-        <div className="d-flex justify-content-end">
+         <div className="d-flex justify-content-end">
 
-        
-        <button type="submit" className="btn btn-primary">
+          <button type="submit" className="btn btn-primary">
             SAVE
-        </button>
+          </button>
         </div>
     </div>
     </>
